@@ -1,0 +1,103 @@
+@scroll-down-animation- 1 {
+  opacity: 1;
+  -webkit-transition: all 0.5s ease-in 3s;
+  transition: all 0.5s ease-in 3s;
+}
+@keyframes bounce {
+  0%,
+  100%,
+  20%,
+  50%,
+  80% {
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+  }
+  40% {
+    -webkit-transform: translateY(-10px);
+    -ms-transform: translateY(-10px);
+    transform: translateY(-10px);
+  }
+  60% {
+    -webkit-transform: translateY(-5px);
+    -ms-transform: translateY(-5px);
+    transform: translateY(-5px);
+  }
+}
+.jumbotron {
+  background-image: url("../img/about/about_top4.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #ffffff;
+}
+.jumbotron .container {
+  text-align: left;
+  max-width: 64%;
+  height: 55vh;
+}
+.jumbotron h1 {
+  color: #3e515b;
+  margin-top: 18vh;
+  -webkit-animation: slideIn 1.5s ease forwards;
+  animation: slideIn 1.5s ease forwards;
+}
+.jumbotron p {
+  margin-top: 2rem;
+  color: #92a9b4;
+  font-size: 1.1rem;
+  -webkit-animation: slideIn 2.5s ease forwards;
+  animation: slideIn 2.5s ease forwards;
+}
+.jumbotron a {
+  font-weight: 300;
+  text-decoration: none;
+  margin: 0 10px;
+  color: #78D4D0;
+  padding: 0;
+  margin: 0;
+}
+#musicnote {
+  margin-top: 2rem;
+  font-size: 0.9rem;
+  color: #b5b5b5;
+  font-style: italic;
+  font-weight: 100;
+}
+.fullcontent_section {
+  margin-top: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.fullcontent_section .fullcontent_img {
+  width: 100%;
+}
+.fullcontent_section .subfull_section {
+  width: 15%;
+  padding-left: 60%;
+  padding-top: 10%;
+}
+.fullcontent_section .fullcontent_header {
+  font-family: "ivyjournal", sans-serif;
+  font-style: italic;
+  color: #ffffff;
+  font-weight: 100;
+}
+.fullcontent_section .fullcontent_text {
+  font-family: 'Lato', sans-serif;
+  color: #ffffff;
+  font-style: italic;
+  font-weight: 300;
+  text-align: left;
+}
+.fullcontent_section .headerunderline {
+  margin-top: 5%;
+  height: 5px;
+  width: 50px;
+  background-color: #78D4D0;
+}
+footer {
+  margin-top: 0;
+  padding: 0;
+}

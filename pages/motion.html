@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-132567743-1"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'UA-132567743-1');
+	</script>
+
+	<title>Xi Li</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!--icon-->
+	<link rel="icon" type="image/x-icon" href="../img/headericon.png" />
+	<!--font-->
+<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
+	<link rel="stylesheet" href="https://use.typekit.net/lap8nfi.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<link rel="stylesheet" type="text/css" href="../css/style.css">
+	<link rel="stylesheet" type="text/css" href="../css/gallery2.css">
+	<!-- <link rel="stylesheet" type="text/css" href="../css/graphics.css"> -->
+	<link rel="stylesheet" type="text/css" href="../css/motion.css">
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+	<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+
+</head>
+
+
+
+<body>
+
+	<header>
+	<nav class="navbar navbar-expand-lg navbar-light navbarself" id="navbarid">
+		<a id="logoa" href="../index.html"><img src="../img/portfolio_design_book/logo1.png" alt="logo"></a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+			<div class="navbar-nav">
+				<a class="nav-item nav-link navlinkself" href="../index.html">WORK <span class="sr-only">(current)</span></a>
+				<a class="nav-item nav-link navlinkself" href="../files/Resume_Xi Li.pdf">RESUME</a>
+				<a class="nav-item nav-link navlinkself" href="about.html">ABOUT</a>
+			</div>
+		</div>
+	</nav>
+	</header>
+
+<div class="main">
+	<!-- <div class="jumbotron">
+		<div class="wrapper">
+			<h1>Graphic Design Collection</h1>
+			<p>Hi! This is collection for my graphic design works! Free to explore interesting moments when I created visual communications.</p>
+		</div>
+	<div class="scroll-down-part">
+		<p></p>
+		<a href="indexprojects" class="scroll-down"></a>
+	</div>
+	</div> -->
+
+	<div class="container">
+		<div class="gallery">
+			<img src="../img/motion/motion_1_G.gif" alt="infovis" width="100%" height="auto" class="gallery-img">
+			<img src="../img/motion/motion_2_b.gif" alt="infovis" width="100%" height="auto" class="gallery-img">
+
+		</div>
+	</div>
+
+</div>
+</div>
+
+
+<!-- gallery -->
+<footer>
+  <div class="footerzone">
+    <div class="row">
+      <div class="col-6 footernotes">
+        <p><span class="highlight">"To see the world, things dangerous to come to, to see behind walls, to draw closer, to find each other and to feel, that is the purpose of life."</span> - <i>The Screte Life of Walter Mitty</i></p>
+	  </div>
+	  <div class="col-6 footeridentity">
+		  <img src="../img/icon_handwrite_black.png" alt="logo" class="footerlogo">
+		  <small class="footerref">© 2019. Designed and coded by Xi Li</small>
+		  <div align="center" class="socialbtns">
+			  <ul class="socialbtnslist">
+				  <li><a href="mailto:lcxi.clcc@gmail.com" class="fa fa-paper-plane"></a></li>
+				  <li><a href="https://www.linkedin.com/in/xiccli" class="fa fa-linkedin"></a></li>
+				  <li><a href="https://www.behance.net/xicc" class="fa fa-behance"></a></li>
+				  <li><a href="https://github.com/xiccli" class="fa fa-github"></a></li>
+			  </ul>
+		  </div>
+	  </div>
+
+  </div>
+</footer>
+</div>
+</div>
+<script>
+//navbar events
+   var c, currentScrollTop = 0,
+       navbar = $('nav');
+
+   $(window).scroll(function () {
+      var a = $(window).scrollTop();
+      var b = navbar.height();
+
+      currentScrollTop = a;
+
+      if (c < currentScrollTop && a > b + b) {
+        navbar.addClass("scrollUp");
+      } else if (c > currentScrollTop && !(a <= b)) {
+        navbar.removeClass("scrollUp");
+      }
+      c = currentScrollTop;
+  });
+$('#toggle').click(function() {
+   $(this).toggleClass('active');
+   $('#overlay').toggleClass('open');
+  });
+</script>
+</body>
+</html>

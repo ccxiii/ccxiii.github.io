@@ -1,0 +1,105 @@
+@import "vars.less";
+
+#onpage{
+	color:@gallery-blue;
+}
+
+#navbarid{
+	background-color:@extra-grey;
+	.navlinkself{
+		color:@white;
+		&:hover{
+			color:@gallery-blue;
+		}
+	}
+}
+
+.main{
+	margin-top:6rem;
+}
+
+.mainprojects{
+	margin-top:0;
+}
+
+.proj_info{
+	color:@white;
+}
+
+.tile{
+	opacity:1;
+}
+
+
+.borderline{
+	border-bottom: 2px solid @mid-grey;
+	width:2rem;
+	padding:0 0 10px 0;
+}
+.borderlinewhite{
+	border-bottom:1px solid @white;
+	width:2rem;
+	padding:0 0 10px 0;
+}
+.borderlineproject{
+	border-bottom: 2px solid @dark-grey;
+	width:2rem;
+	padding:0 0 10px 0;
+}
+
+.belowlinetext{
+	padding:10px 0;
+}
+
+
+
+.jumbospectrum{
+	.jumbotron{
+		background-color:transparent;
+	}
+
+}
+
+.container_2{
+	#specjumbo_topline{
+		margin-bottom:4rem;
+		margin-top:5rem;
+		color:@dark-grey;
+	}
+}
+
+.spectrum_container{
+	display:flex;
+	flex-direction:row;
+	flex-wrap:wrap;
+	img{
+		opacity:1;
+		width:50%;
+		margin-bottom:2rem;
+	}
+	.col-3{
+		text-align:left;
+	}
+	.perspectrum{
+		padding-right:10px;
+		h5{
+			color:@dark-grey;
+			// margin-bottom:1rem;
+		}
+		p{
+			font-size:0.9rem;
+			color:@mid-grey;
+		}
+		.belowlinetext{
+			margin-right:10px;
+		}
+	}
+}
+
+@media screen and (max-width:1024px){
+	.gallerycontent{
+		.tile{
+			width:90%;
+		}
+	}
+}

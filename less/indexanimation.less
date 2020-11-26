@@ -1,0 +1,74 @@
+@import "vars.less";
+@sizing-ratio: 1;
+@border-color: darken(#27b6d4,40%);
+
+.art {
+  width: 475px * @sizing-ratio;
+  height: 325px * @sizing-ratio;
+  position: relative;
+}
+
+.ball {
+  top: 50px * @sizing-ratio;
+  left: 50px * @sizing-ratio;
+  width: 50px * @sizing-ratio;
+  height: 50px * @sizing-ratio;
+  border: (4px * @sizing-ratio) solid @border-color;
+  border-radius: 50%;
+  background-color: #fc8899;
+  position: absolute;
+  transform: skewX((-10px * @sizing-ratio));
+  transform-origin: 50% 100%;
+
+  &:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 40px * @sizing-ratio;
+    height: 40px * @sizing-ratio;
+    border-radius: 50%;
+    background-color: #ff9cad;
+  }
+
+  animation-duration: 1.5s;
+  animation-name: bounce;
+  animation-iteration-count: infinite;
+  animation-direction: linear;
+  animation-timing-function: linear;
+}
+
+@keyframes bounce {
+  0% {
+    transform: scale(1, 1) translate(0, 0);
+/*     animation-timing-function: ease-in; */
+  }
+  10% {
+    transform: scale(1.1, 0.9) translate(0, 0);
+/*     animation-timing-function: ease-out; */
+  }
+  20% {
+    transform: scale(1, 1) translate(0, 0);
+    animation-timing-function: ease-out;
+  }
+  40% {
+    transform: scale(0.9, 1.1) translate(0, (-25px * @sizing-ratio));
+    animation-timing-function: ease-in;
+  }
+  60% {
+    transform: scale(1, 1) translate(0, 0);
+    animation-timing-function: ease-in;
+  }
+  65% {
+    transform: scale(1.1, 0.9) translate(0, 0);
+    animation-timing-function: ease-in;
+  }
+  70% {
+    transform: scale(1, 1) translate(0, 0);
+/*     animation-timing-function: ease-in; */
+  }
+  100% {
+    transform: scale(1, 1) translate(0, 0);
+/*     animation-timing-function: ease-in; */
+  }
+}

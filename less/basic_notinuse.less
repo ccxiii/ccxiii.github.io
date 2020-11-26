@@ -1,0 +1,77 @@
+@import "vars.less";
+
+html,body {
+  margin: 0;
+  font-family: @typefaces;
+  height:100%;
+}
+
+h1 {
+  font-size: 48px;
+}
+
+p {
+  max-width: 65%;
+  min-width: 500px;
+}
+
+h2 {
+  font-size: 2.6rem;
+}
+
+div {
+  width: 100%;
+}
+
+ul{
+	list-style: none;
+	margin: 3rem 0;
+}
+
+
+a{
+	color: @light-grey;
+	text-decoration: none;
+	display:block;
+	position: relative;
+	overflow: hidden;
+	transition: color .3s cubic-bezier(0.11, 0.7, 0, 1);
+}
+
+a:hover{
+	color:@blue-highlight;
+}
+
+img{
+	border-style: none;
+}
+
+.titlelink{
+	color:@blue-light;
+}
+
+.logoreg{
+	margin:5rem 0;
+	color:@blue-light;
+}
+
+.nav {
+  margin:0 2rem 0 0;
+  padding:0 1rem;
+  display:flex;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  // flex: 1;
+  color:@light-grey;
+  font-weight: 100;
+  height:100%;
+  // background-color: @dark-grey;
+  li {
+    display: inline-block;
+    padding: 8px 6px;
+    font-size: 16px;
+    line-height: 24px;
+    min-width: 100px;
+    text-align: center;
+    color: #524B61;
+    border-bottom: 3px solid transparent;

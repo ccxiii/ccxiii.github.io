@@ -1,0 +1,87 @@
+@scroll-down-animation- 1 {
+  opacity: 1;
+  -webkit-transition: all 0.5s ease-in 3s;
+  transition: all 0.5s ease-in 3s;
+}
+@keyframes bounce {
+  0%,
+  100%,
+  20%,
+  50%,
+  80% {
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+  }
+  40% {
+    -webkit-transform: translateY(-10px);
+    -ms-transform: translateY(-10px);
+    transform: translateY(-10px);
+  }
+  60% {
+    -webkit-transform: translateY(-5px);
+    -ms-transform: translateY(-5px);
+    transform: translateY(-5px);
+  }
+}
+body {
+  background-color: #161616;
+  background-image: none;
+}
+.jumbotron {
+  height: 73vh;
+}
+.jumbotron .wrapper {
+  max-width: 56%;
+  margin-top: 20vh;
+  height: 30vh;
+}
+.jumbotron p {
+  color: #808080;
+  font-weight: 300;
+}
+.jumbotron a {
+  font-weight: 300;
+  text-decoration: none;
+  margin: 0 10px;
+  color: #78D4D0;
+  padding: 0 10px 4px 10px;
+  transition: all 0.35s ease-in-out 0s;
+  box-shadow: inset 0 0 0 0 white;
+  padding: 0;
+  margin: 0;
+}
+.jumbotron a:hover {
+  color: white;
+  box-shadow: inset 300px 0 0 0 #78D4D0;
+}
+#musicnote {
+  margin-top: 2rem;
+  font-size: 0.9rem;
+  color: #b5b5b5;
+  font-style: italic;
+  font-weight: 100;
+}
+.jumbo_content {
+  display: flex;
+  flex-direction: row;
+}
+.svgimg {
+  position: fixed;
+  top: 10rem;
+  right: 1rem;
+  z-index: 99;
+  width: 500px;
+  height: 92vh;
+}
+.svgimg .baselinegroup {
+  height: 100%;
+}
+.svgimg .baselinegroup circle {
+  fill: #12AEEE;
+  stroke: #12AEEE;
+}
+.svgimg .baselinegroup line {
+  stroke: #12AEEE;
+  stroke-width: 1.8px;
+}

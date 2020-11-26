@@ -1,0 +1,141 @@
+@import "vars.less";
+@gallery-width: 100%;
+@transition-duration: 0.5s;
+
+
+body{
+	background-color: @extra-grey;
+}
+footer{
+	color:@light-white;
+}
+.navbar,.overlay-menu{
+	background-color:@extra-grey;
+	a{
+		text-decoration: none;
+		margin:0 10px;
+		color:@light-white,255,255;
+		padding: @linkstylenone;
+		transition:@linktrans;
+		border-bottom:2px solid @extra-grey;
+		&:hover{
+			color:@gallery-blue;
+			padding:@linkstylehover;
+			border-bottom: @linkborderbtm-indexproj-gallery-hover;
+		}
+	}
+}
+
+#onpage-gallery{
+	text-decoration: none;
+	margin:0 10px;
+	color:@gallery-blue;
+	padding:@linkstylehover;
+	border-bottom: @linkborderbtm-indexproj-gallery-hover;
+}
+
+.jumbotron{
+	// background-image:url("../img/gallery/gallery_top.png");
+	// background-size:cover;
+	// background-repeat: no-repeat;
+	// background-position: center;
+	padding-left:10%;
+	padding-right:10%;
+	max-width:100%;
+
+	h1,p{
+			color: @gallery-blue;
+	}
+	.wrapper{
+		a{
+			color:@gallery-blue;
+			&:hover{
+				color:@light-white;
+			}
+		}
+	}
+}
+
+
+#gallery-title{
+	color:@gallery-blue;
+	font-family:@navtypeface;
+	font-size:3rem;
+	margin-top:8rem;
+}
+.gallery-welcome{
+	color:@gallery-blue;
+	font-family:@navtypeface;
+}
+
+.types{
+	font-family:@navtypeface;
+	margin-bottom:3rem;
+	display:flex;
+	justify-content: center;
+	a{
+		text-decoration: none;
+		margin:0 10px;
+		color:@light-white;
+		padding: @linkstylenone;
+		transition:@linktrans;
+		border-bottom:@linkborderbtm-indexproj-gallery;
+		&:hover{
+			color:@gallery-blue;
+			padding:@linkstylehover;
+			border-bottom: @linkborderbtm-indexproj-gallery-hover;
+		}
+	}
+
+}
+
+.mainprojects{
+	margin-top:5rem;
+}
+
+#gujian3{
+	color:@extra-grey;
+	background-image:url("../img/gallery/color_lgsize2.png");
+	background-size:cover;
+	background-repeat: no-repeat;
+	background-position:center;
+}
+.wrapper{
+	h1{
+		font-family:@navtypeface;
+	}
+		font-family:@navtypeface;
+		font-weight:300;
+}
+
+// .projinfo{
+// 	margin-left:0;
+// 	margin-right:0;
+// }
+.perproject{
+	height:800px;
+}
+
+@media screen and (max-width:650px){
+	header{
+		#bodycontainer{
+			.navbar{
+				display:none;
+			}
+		}
+	}
+	.jumbotron{
+		.scroll-down-part{
+			display:none;
+		}
+	}
+}
+@media screen and (min-width:650px){
+	header{
+		#bodycontainer{
+			.smallnav{
+				display:none;
+			}
+		}
+	}
+}

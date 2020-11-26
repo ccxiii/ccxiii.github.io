@@ -1,0 +1,182 @@
+@scroll-down-animation- 1 {
+  opacity: 1;
+  -webkit-transition: all 0.5s ease-in 3s;
+  transition: all 0.5s ease-in 3s;
+}
+@keyframes bounce {
+  0%,
+  100%,
+  20%,
+  50%,
+  80% {
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+  }
+  40% {
+    -webkit-transform: translateY(-10px);
+    -ms-transform: translateY(-10px);
+    transform: translateY(-10px);
+  }
+  60% {
+    -webkit-transform: translateY(-5px);
+    -ms-transform: translateY(-5px);
+    transform: translateY(-5px);
+  }
+}
+body {
+  background-image: url("../img/gallery/gallery_top3.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+}
+footer {
+  color: #f2f2f0;
+}
+.footerzone {
+  color: #f2f2f0;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+.footerzone .socialbtns .fa {
+  color: #f2f2f0;
+}
+.footerzone .socialbtns .fa:hover {
+  color: #12AEEE;
+}
+#myBtn:hover {
+  background-color: #12AEEE;
+  border: 1px solid #12AEEE;
+}
+#progressBar {
+  background: #12AEEE;
+}
+.navbarself {
+  background-color: rgba(0, 0, 0, 0.6);
+  color: #ffffff;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  font-size: 1.2rem;
+}
+.navbarself a {
+  text-decoration: none;
+  color: #ffffff;
+}
+.navbarself a:hover {
+  color: #12AEEE;
+  transition: all 0.2s ease;
+}
+.navbarself #onpagegallery {
+  color: #12AEEE;
+  font-weight: 500;
+}
+#gallery-title {
+  color: #12AEEE;
+  font-family: 'Lato', sans-serif;
+  font-size: 3rem;
+  margin-top: 8rem;
+}
+.gallery-welcome {
+  color: #12AEEE;
+  font-family: 'Lato', sans-serif;
+}
+.types {
+  font-family: 'Lato', sans-serif;
+  margin-bottom: 3rem;
+  display: flex;
+  justify-content: center;
+}
+.types a {
+  text-decoration: none;
+  margin: 0 10px;
+  color: #f2f2f0;
+  padding: 0 10px 4px 10px;
+  transition: 0.4s ease;
+  border-bottom: 2px solid #f2f2f0;
+}
+.types a:hover {
+  color: #12AEEE;
+  padding: 0 10px 6px 10px;
+  border-bottom: 2px solid #12AEEE;
+}
+.mainprojects {
+  margin-top: 5rem;
+}
+.jumbotron {
+  background-image: none;
+  background-color: transparent;
+  max-width: 100%;
+  height: 92vh;
+  color: #ffffff;
+}
+.jumbotron h1,
+.jumbotron p {
+  color: #12AEEE;
+}
+.jumbotron h1 {
+  font-size: 3rem;
+}
+.jumbotron p {
+  font-size: 1rem;
+}
+.gallery {
+  -webkit-column-count: 3;
+  -moz-column-count: 3;
+  column-count: 3;
+  -webkit-column-gap: 10px;
+  -moz-column-gap: 10px;
+  column-gap: 10px;
+  margin-top: 10px;
+  overflow: hidden;
+}
+.gallery img {
+  width: 100%;
+  height: auto;
+  transition: 500ms;
+  margin-bottom: 10px;
+  -webkit-filter: grayscale(0%);
+  /* Ch 23+, Saf 6.0+, BB 10.0+ */
+  filter: grayscale(0%);
+  /* FF 35+ */
+  opacity: 0.9;
+  page-break-inside: avoid;
+  /* For Firefox. */
+  -webkit-column-break-inside: avoid;
+  /* For Chrome & friends. */
+  break-inside: avoid;
+  /* For standard browsers like IE. :-) */
+}
+.gallery img:hover {
+  opacity: 1;
+  -webkit-filter: grayscale(0%);
+  /* Ch 23+, Saf 6.0+, BB 10.0+ */
+  filter: grayscale(0%);
+  /* FF 35+ */
+}
+@media screen and (max-width: 767px) {
+  .gallery {
+    -webkit-column-count: 2;
+    -moz-column-count: 2;
+    column-count: 2;
+  }
+  .gallery div {
+    margin: 0;
+    width: 200px;
+  }
+  .modal-dialog {
+    margin: 0 8vw;
+  }
+}
+@media screen and (max-width: 479px) {
+  .gallery {
+    -webkit-column-count: 1;
+    -moz-column-count: 1;
+    column-count: 1;
+  }
+  .gallery div {
+    margin: 0;
+    width: 200px;
+  }
+}

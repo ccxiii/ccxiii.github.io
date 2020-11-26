@@ -1,0 +1,76 @@
+@import "vars.less";
+@vrred:#ed7857;
+
+
+#project-name{
+	// color:#78ccd0;
+	color:@white;
+}
+
+.project-title{
+	background-image:url("../img/arvr/vrtop2.png");
+	.content-details{
+		p{
+			color:@light-white;
+		}
+		a{
+			color:@light-white;
+			&:hover{
+				color:@vrred;
+			}
+		}
+	}
+	padding-bottom:14rem;
+}
+
+// .content-section{
+//
+// 	.content-header{
+// 		background-image: linear-gradient(to left, transparent 50%, #ed7857 30%);
+// 	}
+// }
+
+.content-section2{
+	margin-bottom:6rem;
+}
+
+.sidenav{
+	a{
+		&:hover{
+			color:@vrred;
+		}
+	}
+}
+
+#progressBar{
+	background: @vrred;
+}
+
+#myBtn{
+	color:@vrred;
+	&:hover{
+		background-color:@vrred;
+	}
+}
+
+
+.bw_vr_3lowficol{
+	display:flex;
+	flex-direction:row;
+	justify-content: space-between;
+	flex-wrap:wrap;
+	// height:6rem;
+	width:100%;
+	.pergif{
+		width:32%;
+		img{
+			width:100%;
+		}
+	}
+}
+#vrprototype{
+	background-image:url("../img/betweenworlds/bw_vrprototype_background.png");
+	background-size:contain;
+	background-repeat: no-repeat;
+	background-position: center;
+}

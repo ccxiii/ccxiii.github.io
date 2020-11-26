@@ -1,0 +1,51 @@
+@scroll-down-animation- 1 {
+  opacity: 1;
+  -webkit-transition: all 0.5s ease-in 3s;
+  transition: all 0.5s ease-in 3s;
+}
+@keyframes bounce {
+  0%,
+  100%,
+  20%,
+  50%,
+  80% {
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+  }
+  40% {
+    -webkit-transform: translateY(-10px);
+    -ms-transform: translateY(-10px);
+    transform: translateY(-10px);
+  }
+  60% {
+    -webkit-transform: translateY(-5px);
+    -ms-transform: translateY(-5px);
+    transform: translateY(-5px);
+  }
+}
+.project-title {
+  padding-bottom: 12rem;
+}
+.sidenav a:hover {
+  color: #ffcf00;
+}
+.video_section {
+  text-align: center;
+  padding-left: 25%;
+  padding-right: 25%;
+}
+#progressBar {
+  background-color: #3993e5;
+}
+#myBtn:hover {
+  background-color: #3993e5;
+  border: 1px solid #3993e5;
+}
+#top_intro {
+  background-image: url("../img/groove/groove_blue.png");
+  width: 100%;
+}
+.project-title {
+  padding-bottom: 10rem;
+}

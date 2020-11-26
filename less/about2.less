@@ -1,0 +1,70 @@
+@import "vars.less";
+
+body{
+	background-color:@extra-grey;
+	background-image: none;
+}
+.jumbotron{
+
+	.wrapper{
+		max-width:56%;
+		margin-top:20vh;
+		height:30vh;
+	}
+		height:73vh;
+		p{
+			color:@mid-grey;
+			font-weight:300;
+		}
+		a{
+			font-weight:300;
+			text-decoration: none;
+			margin:0 10px;
+			color:@bright-blue;
+			padding: @linkstylenone;
+			transition:@linkshadowtrans;
+			box-shadow:@linkshadownone;
+			&:hover{
+				color:white;
+				box-shadow:@linkshadowhover-blue;
+			}
+			padding:0;
+			margin:0;
+		}
+
+}
+
+#musicnote{
+	margin-top:2rem;
+	font-size:0.9rem;
+	color:@light-grey;
+	font-style:italic;
+	font-weight:100;
+}
+
+
+.jumbo_content{
+	display:flex;
+	flex-direction:row;
+}
+
+
+.svgimg{
+	position:fixed;
+	top:10rem;
+	right:1rem;
+	z-index:99;
+	width:500px;
+	height:92vh;
+	.baselinegroup{
+		height:100%;
+		circle{
+			fill:@gallery-blue;
+			stroke:@gallery-blue;
+		}
+		line{
+			stroke:@gallery-blue;
+			stroke-width:1.8px;
+		}
+	}
+}

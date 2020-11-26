@@ -1,0 +1,146 @@
+@scroll-down-animation- 1 {
+  opacity: 1;
+  -webkit-transition: all 0.5s ease-in 3s;
+  transition: all 0.5s ease-in 3s;
+}
+@keyframes bounce {
+  0%,
+  100%,
+  20%,
+  50%,
+  80% {
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+  }
+  40% {
+    -webkit-transform: translateY(-10px);
+    -ms-transform: translateY(-10px);
+    transform: translateY(-10px);
+  }
+  60% {
+    -webkit-transform: translateY(-5px);
+    -ms-transform: translateY(-5px);
+    transform: translateY(-5px);
+  }
+}
+#project-name {
+  color: #ffffff;
+}
+.project-title {
+  background-image: url("../img/ehealth/ehealth_top2.png");
+}
+.project-title .content-details {
+  padding-top: 2rem;
+}
+.project-title .content-details p {
+  color: #f2f2f0;
+}
+.project-title .content-details a {
+  color: #f2f2f0;
+}
+.project-title .content-details a:hover {
+  color: #78D4D0;
+}
+.content-section .content-header {
+  background-image: linear-gradient(to left, transparent 50%, #b5eef1 30%);
+}
+.project-intro p {
+  color: #ffffff;
+}
+.sidenav a:hover {
+  color: #41acd3;
+}
+#progressBar {
+  background-color: #41acd3;
+}
+#myBtn:hover {
+  background-color: #41acd3;
+  border: 1px solid #41acd3;
+}
+#reform {
+  height: 30rem;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #334e4d;
+  padding-top: 30px;
+  background-image: url("../img/ehealth/ehealth_wf01.png");
+}
+#rebtn {
+  height: 30rem;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #334e4d;
+  padding-top: 30px;
+  background-image: url("../img/ehealth/ehealth_wf02.png");
+}
+#retext {
+  height: 30rem;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #334e4d;
+  background-image: url("../img/ehealth/ehealth_wf03.png");
+  padding-top: 30px;
+}
+#relayout {
+  height: 30rem;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url("../img/ehealth/ehealth_wf04.png");
+  background-color: #334e4d;
+  padding-top: 30px;
+}
+#reoption {
+  height: 30rem;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url("../img/ehealth/ehealth_wf05.png");
+  background-color: #334e4d;
+  padding-top: 30px;
+}
+#fullbottom {
+  height: 3rem;
+}
+.output_headings {
+  margin: 2rem 0 2rem 0;
+}
+.output_headings p {
+  font-size: 1rem;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-family: 'Lato', sans-serif;
+  color: #c1dde0;
+}
+.output_imgs {
+  margin: 2rem 0 0 0;
+}
+#outputs-branding {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url("../img/ehealth/output_branding_background.png");
+  padding-top: 30px;
+}
+#outputs-typo {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url("../img/ehealth/output_typo_background.png");
+  padding-top: 30px;
+}
+#outputs-color {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url("../img/ehealth/output_color_background.png");
+  padding-top: 30px;
+}
+#outputs-interfaces {
+  padding-bottom: 3rem;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url("../img/ehealth/output_interfaces_background.png");
+  padding-top: 30px;
+}

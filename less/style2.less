@@ -1,0 +1,227 @@
+@import "vars.less";
+
+body{
+	font-family: @navtypeface;
+}
+
+// --------------------------------------- NAVIGATION ---------------------------------------
+.navbarself{
+	background-color:#ffffff;
+	color:@mid-grey;
+	padding-left:10%;
+	padding-right:10%;
+	padding-top:1rem;
+	padding-bottom:1rem;
+	font-size:1.2rem;
+}
+
+#logoa{
+	height:2.7rem;
+	text-decoration: none;
+	margin:0;
+	padding: 0;
+	transition:none;
+	box-shadow:none;
+	&:hover{
+			// color:@dark-blue;
+			padding:0;
+			border-bottom: none;
+	}
+	padding:0;
+	margin:0;
+	img{
+		height:100%;
+	}
+}
+
+#navbarNavAltMarkup{
+	justify-content: flex-end;
+}
+
+
+// --------------------------------------- JUMBOTRON ---------------------------------------
+
+.jumbotron{
+	margin-left:10%;
+	padding-right:10%;
+	height:92vh;
+	background-color:@white;
+	background-image:url("../img/index/index_top1.png");
+	background-size:cover;
+	background-repeat: no-repeat;
+	background-position: right;
+	.container{
+		width:60%;
+		margin-left:0;
+		color:@dark-grey;
+	}
+	h1{
+		margin-top:15rem;
+		padding-bottom:1rem;
+		font-size:3rem;
+	}
+	p{
+		font-size:1.2rem;
+	}
+
+}
+
+// --------------------------------------- PROJECTS ---------------------------------------
+
+
+#portfolio { width:100%; margin:20px 0px; }
+.tile { float:left; min-height:100px; max-height:150px; width:20%; border:1px #fff solid; }
+.tile:hover { opacity: 0.5; }
+.web { background:#00C5CD;}
+.flyers { background: #CC3232;}
+.bcards { background: #ddd; }
+p{ padding:10px; border-bottom: 1px #ccc dotted; text-decoration: none; font-family: Arial; text-transform:uppercase; font-size: 12px; color: #333; display:block; float:left;}
+p:hover { cursor:pointer; background: #333; color:#eee; }
+
+#limeproj{
+	background-image:url("../img/lime/lime_index.png");
+	background-size:cover;
+  	background-repeat: no-repeat;
+  	background-position: center;
+}
+#ecoachproj{
+	background-image:url("../img/ecoach/ecoach_index.png");
+	background-size:cover;
+  	background-repeat: no-repeat;
+  	background-position: center;
+	// color:#ffffff;
+	// .projinfo{
+	// 	.proj-link{
+	// 		color:#ffffff;
+	// 		a{
+	// 			color:#ffffff;
+	// 			border-bottom:@linkborderbtm-indexproj-white;
+	// 		}
+	// 	}
+	// }
+}
+#bridgemuseumproj{
+	background-image:url("../img/betweenworlds/bw_index.png");
+	background-size:cover;
+  	background-repeat: no-repeat;
+  	background-position: center;
+	// color:#ffffff;
+	// .projinfo{
+	// 	.proj-link{
+	// 		color:#ffffff;
+	// 		a{
+	// 			color:#ffffff;
+	// 			border-bottom:@linkborderbtm-indexproj-white;
+	// 		}
+	// 	}
+	// }
+}
+// #primarius{
+// 	background-color:@salmon;
+// }
+#grooveproj{
+	background-image:url("../img/groove/groove_index8.png");
+	background-size:cover;
+  	background-repeat: no-repeat;
+  	background-position: center;
+}
+
+#graphicproj{
+	background-image:url("../img/visual/visual_index2.png");
+	background-size:cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	// color:#ffffff;
+	// .projinfo{
+	// 	.proj-link{
+	// 		color:#ffffff;
+	// 		a{
+	// 			color:#ffffff;
+	// 			border-bottom:@linkborderbtm-indexproj-white;
+	// 		}
+	// 	}
+	// }
+}
+
+#motionproj{
+	background-image:url("../img/motion/motion_index.gif");
+	background-size:cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	// color:#ffffff;
+	// .projinfo{
+	// 	.proj-link{
+	// 		color:#ffffff;
+	// 		a{
+	// 			color:#ffffff;
+	// 			border-bottom:@linkborderbtm-indexproj-white;
+	// 		}
+	// 	}
+	// }
+}
+
+#illusproj{
+	background-image:url("../img/illustrations/indeximg/gj3_index.png");
+	background-size:cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	// color:#ffffff;
+	// .projinfo{
+	// 	.proj-link{
+	// 		color:#ffffff;
+	// 		a{
+	// 			color:#ffffff;
+	// 			border-bottom:@linkborderbtm-indexproj-white;
+	// 		}
+	// 	}
+	// }
+}
+
+#illusproj_moments{
+	background-image:url("../img/illustrations/indeximg/moments_index.png");
+	background-size:cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+#ehealthproj{
+	background-image:url("../img/ehealth/ehealth_index4.png");
+	background-size:cover;
+  	background-repeat: no-repeat;
+  	background-position: center;
+}
+
+
+
+.gallery {
+-webkit-column-count: 3;
+-moz-column-count: 3;
+column-count: 3;
+-webkit-column-width: 33%;
+-moz-column-width: 33%;
+column-width: 33%; }
+.gallery .pics {
+-webkit-transition: all .2s ease;
+transition: all .2s ease; }
+.gallery .animation {
+// -webkit-transform: scale(1);
+// -ms-transform: scale(1);
+// transform: scale(1); }
+
+@media (max-width: 450px) {
+.gallery {
+-webkit-column-count: 1;
+-moz-column-count: 1;
+column-count: 1;
+-webkit-column-width: 100%;
+-moz-column-width: 100%;
+column-width: 100%;
+}
+}
+
+@media (max-width: 400px) {
+.btn.filter {
+padding-left: 1.1rem;
+padding-right: 1.1rem;
+}
+}

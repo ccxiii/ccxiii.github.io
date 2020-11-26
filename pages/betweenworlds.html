@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-132567743-1"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'UA-132567743-1');
+	</script>
+	<title>Xi Li · Between Worlds</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!--icon-->
+	<link rel="icon" type="image/x-icon" href="../img/headericon2.png" />
+	<!--font-->
+	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
+		<link rel="stylesheet" href="https://use.typekit.net/lap8nfi.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+		<link rel="stylesheet" type="text/css" href="../css/style.css">
+		<link rel="stylesheet" type="text/css" href="../css/project_style.css">
+		<link rel="stylesheet" type="text/css" href="../css/bw.css">
+		<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+		<!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script> -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+	</head>
+
+
+
+<body>
+<div id="progressBar"></div>
+<header>
+<nav class="navbar navbar-expand-lg navbar-light navbarself" id="navbarid">
+	<a id="logoa" href="../index.html"><img src="../img/portfolio_design_book/logo1.png" alt="logo"></a>
+	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+		<span class="navbar-toggler-icon"></span>
+	</button>
+	<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+		<div class="navbar-nav">
+			<a class="nav-item nav-link navlinkself" href="../index.html">WORK <span class="sr-only">(current)</span></a>
+			<a class="nav-item nav-link navlinkself" href="../files/Resume_Xi Li_0503.pdf">RESUME</a>
+			<a class="nav-item nav-link navlinkself" href="about.html">ABOUT</a>
+		</div>
+	</div>
+</nav>
+</header>
+
+<button onclick="topFunction()" class="btnup" id="myBtn" title="Go to top"><i class="fa fa-arrow-up"></i></button>
+<div id="myModal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-body">
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="main">
+	<div class="sidenav" id="sidenav">
+		<a href="#overview" class="scrollTo"><span class="dot"></span>Overview</a>
+		<a href="#challenge" class="scrollTo"><span class="dot"></span>Challenge</a>
+		<a href="#userresearch" class="scrollTo"><span class="dot"></span>User Research</a>
+		<a href="#relatedproducts" class="scrollTo"><span class="dot"></span>Related Products</a>
+		<a href="#brainstorming" class="scrollTo"><span class="dot"></span>Brainstorming</a>
+		<a href="#storyboards" class="scrollTo"><span class="dot"></span>Storyboards</a>
+		<a href="#userflows" class="scrollTo"><span class="dot"></span>User Flows</a>
+		<!-- <a href="#interfaces" class="scrollTo">Interfaces</a> -->
+		<a href="#vrprototype" class="scrollTo">Low-Fidelity Prototypes</a>
+	</div>
+
+	<div class="project-title" style="padding-bottom:0rem;padding-top:6rem">
+		<div class="content-section-top"  style="opacity:1">
+			<div class="project-name" style="text-align:center">
+				<p id="project-name">Between Worlds</p>
+				<div class="borderlinefontblue" style="text-align:center"></div>
+			</div>
+			<div class="content-details" style="padding-bottom:3rem;padding-top:2rem;text-align:center">
+				<p style="color:#92a9b4">Between Worlds, a mobile virtual reality app, provides people with a virtual access to museum exhibition. Enjoy your trip here!</p>
+				<!-- <p>We help citizens access health data and health service easily.<a href="https://www.xmsmjk.com/" class="fa fa-link projlink"></a></p> -->
+			</div>
+		</div>
+	</div>
+	<div class="project-title" style="padding-bottom:0rem;padding-top:0rem; background-color:#ecf0f5" id="top_intro">
+	<div class="content-section-top" style="text-align:center">
+	<div class="percontent">
+			<div class="col-6 left-col" style="text-align:left; padding-right:5%">
+				<p class="itemtitle">Introduction</p>
+				<p style="font-size:0.85rem">This app is a virtual exhibition inside a bridge-theme museum, which both increases the immersive experience as a complimentory to current physical exhibition, and provide a potential access to people who have limited access to the physical ones. As this is a self-project, I worked as UX researcher and designer for user study, affinity wall analysis, user testing, information architecture, story mapping, and interface design as well as visual elements design.</p>
+			</div>
+			<div class="col-6 right-col" style="text-align:left; padding-left:5%">
+				<p class="itemtitle">Type</p>
+				<p style="font-size:0.85rem">Mobile APP UX Redesign (self-project)</p>
+				<p class="itemtitle">Timeline</p>
+				<p style="font-size:0.85rem">Sep - Dec 2017 (Refined in 2018)</p>
+				<p class="itemtitle">My Role<p>
+				<p style="font-size:0.85rem">Ideation, sketching, wireframing, coding, low & high-fi mockups, graphic design</p>
+			</div>
+	</div>
+	</div>
+	</div>
+
+
+
+	<div class="project-content">
+		<!-- <div class="reserved-space">
+		</div> -->
+		<!-- <div class="content-section">
+			<h3 class="content-header">PROJECT INFO</h3>
+			<div class="borderlinelight"></div>
+			<div class="percontent">
+					<div class="col-3 left-col">
+						<p class="itemtitle">Type</p>
+						<p class="itemtitle">Timeline</p>
+						<p class="itemtitle">Contributed<p>
+					</div>
+					<div class="col-9 right-col">
+						<p>VR Concept Design</p>
+						<p>Oct 2018 - Now</p>
+						<p></p>
+					</div>
+				</div>
+		</div> -->
+		<div class="content-section" id="overview">
+			<h3 class="content-header">OVERVIEW</h3>
+			<div class="borderlinelight"></div>
+				<div class="percontent">
+					<div class="col-6 left-col">
+						<p>The idea of creating a VR exhibition came from designing an exhibition concept for a bridge museum in my hometown. This Bridge Museum was built for memorizing the work for building Haicang Bridge (opened in Dec, 1999) connecting downtown island to other places of both the city and other cities.</p>
+						<p>Inspired by the "BRIDGE" metaphor, I designed a vr exhibition concept for people to get more easy accesses to bridge constructing process and local culture, as well as serving as a solution for nostalgia.</p>	</div>
+					<div class="col-6 right-col">
+						<img class="inside_img" src="../img/betweenworlds/bw_context.png" alt="current problems" height="12rem">
+					</div>
+				</div>
+				<div class="percontent">
+					<p>In my design, there are 2 "visiting routes". One is about bridge constructing process, and the other one is about local culture tour. Users could choose whatever they like to "visit". Here are some current interfaces examples (I am learning Blender to build 3D models, so hopefully it will be real 3D interface models soon). </p>
+				</div>
+				<div class="percontent">
+					<div class="col-8 left-col">
+						<img class="inside_img" src="../img/betweenworlds/musicband_gulang.png" alt="">
+					</div>
+					<div class="col-4 right-col">
+						<p>Example mid-fidelity interface (Xi's working hard to move this project forward...).</p>
+					</div>
+				</div>
+		</div>
+
+		<div class="content-section" id="challenge">
+			<h3 class="content-header">CHALLENGE</h3>
+			<div class="borderlinelight"></div>
+				<div class="percontent" style="padding-bottom:0.5rem">
+					<p>Based on my study of this museum, there are 3 main issues.
+				</div>
+				<div class="percontent" style="padding-top:0.5rem">
+					<div class="col-4">
+						<img class="inside_img" src="../img/betweenworlds/problem1.png" alt="current problems">
+						<h3 class="smallpointheaderlight" style="padding-top:1rem">Out-Of-Time Exhibition Style</h3>
+						<p>As it was opened in 1999 without frequent updates, the overall style inside the museum together with exhibitions is a past-time one. Compared to new scientific or tech-oriented museums with advanced technology displayed, it is absolutely out of time. </p>
+					</div>
+					<div class="col-4">
+						<img class="inside_img" src="../img/betweenworlds/problem2.png" alt="current problems">
+						<h3 class="smallpointheaderlight" style="padding-top:1rem">Limited Exhibitions</h3>
+						<p>Since the museum is about bridge history and constructions, one exhibition (main) is about Haicang Bridge constructing process, while the other one is about famous bridges in the world. From both topics and amount of exhibits, visitors have very little things to explore.</p>
+					</div>
+					<div class="col-4">
+						<img class="inside_img" src="../img/betweenworlds/problem3.png" alt="current problems">
+						<h3 class="smallpointheaderlight" style="padding-top:1rem">Background Knowledge</h3>
+						<p>A lacking of certain background knowledge in bridge or structural engineering may lead to difficult understanding as the guidance is not properly enough inside the museum. This is an important reason that influence visitor flow. </p>
+					</div>
+				</div>
+		</div>
+
+
+		<div class="content-section" id="userresearch">
+			<h3 class="content-header">USER RESEARCH</h3>
+			<div class="borderlinelight"></div>
+			<div class="percontent">
+				<div class="col-6 left-col">
+					<p>To help reverse the situation, I started to look into what could be improved from UX perspective and digital solutions. Not limiting myself to tech-heavy parts, I tried to discover what visitors liked to see inside a museum. </p>
+					<p>Based on my research insights, I decided to design for a bridge-related exhibition with more focus on cultural and historical aspects that visitors are familiar with and could also work as a city reflection. Platforms would be digital-based to provide more possibilities for people with limited physical accesses and help in updatings. </p>
+				</div>
+				<div class="col-6 left-col">
+					<img class="inside_img mockupsimg" src="../img/betweenworlds/bw_awnb.png" alt="affinitywall" height="12rem">
+				</div>
+			</div>
+			<div class="percontent" style="padding-bottom:0.5rem">
+				<p>From user research, 5 key words are extracted out: accessibility, stories, updates, common themes and aesthetics.</p>
+			</div>
+			<div class="percontent" style="padding-top:0.5rem">
+				<div class="col points">
+					<img class="inside_img" src="../img/betweenworlds/userinsight_1.png" alt="current problems">
+					<p style="padding-top:1rem">Museums’ visitings are limited due to locations and time</p>
+				</div>
+				<div class="col">
+					<img class="inside_img" src="../img/betweenworlds/userinsight_2.png" alt="current problems">
+					<p style="padding-top:1rem">Impressive museums usually provide good stories.</p>
+				</div>
+				<div class="col">
+					<img class="inside_img" src="../img/betweenworlds/userinsight_3.png" alt="current problems">
+					<p style="padding-top:1rem">Lacking of updates in new topics and presenting technologies, or related events, may stop visitors from visiting again.</p>
+				</div>
+				<div class="col">
+					<img class="inside_img" src="../img/betweenworlds/userinsight_4.png" alt="current problems">
+					<p style="padding-top:1rem">Themes favored most are history and art, the common topics as in daily life.</p>
+				</div>
+				<div class="col">
+					<img class="inside_img" src="../img/betweenworlds/userinsight_5.png" alt="current problems">
+					<p style="padding-top:1rem">Aesthetics comes the top 2 options for determining if an exhibition is good.</p>
+				</div>
+			</div>
+			<div class="percontent">
+				<p>therefore, I made my design goals as creating a product with CULTURAL REFLECTION, IMMERSIVE, AESTHETICS, EASY-TO-UNDERSTAND attributes.</p>
+			</div>
+		</div>
+
+
+		<!-- <div class="content-section">
+			<h3 class="content-header">DESIGN GOALS</h3>
+			<div class="borderlinelight"></div>
+			<div class="percontent">
+				<div class="col-3" style="text-align:center">
+					<h3 class="smallpointheaderlight" style="padding-top:1rem">SHARING</h3>
+					<img class="inside_img" src="../img/betweenworlds/designgoal1.png" alt="current problems">
+				</div>
+				<div class="col-3" style="text-align:center">
+					<h3 class="smallpointheaderlight" style="padding-top:1rem">IMMERSIVE</h3>
+					<img class="inside_img" src="../img/betweenworlds/designgoal2.png" alt="current problems">
+				</div>
+				<div class="col-3" style="text-align:center">
+					<h3 class="smallpointheaderlight" style="padding-top:1rem">AESTHETICS</h3>
+					<img class="inside_img" src="../img/betweenworlds/designgoal3.png" alt="current problems">
+				</div>
+				<div class="col-3" style="text-align:center">
+					<h3 class="smallpointheaderlight" style="padding-top:1rem">CULTURE</h3>
+					<img class="inside_img" src="../img/betweenworlds/designgoal4.png" alt="current problems">
+				</div>
+			</div>
+		</div> -->
+
+		<div class="content-section" id="relatedproducts">
+			<h3 class="content-header">RELATED PRODUCTS</h3>
+			<div class="borderlinelight"></div>
+			<div class="percontent">
+				<div class="col-6 left-col">
+					<p>To learn about what digital solutions are applied in current museums, I conducted a comparative analysis and looked into both physical-based and purely digital-based products like Montréal en Histoires, Memory of the City, interactive facilities in Hands-On Museum of Ann Arbor, Museum of Pop Culture in Seattle and Ford Motor Museum, and the new exhibition “Meet Vermeer” in Google Arts & Culture. Even product like Labo Kit from Nintendo was also of my exploring product. These products and exhibitions helped me better understand how to apply digital solutions in improving museum exhibitions and became my inspirations as well.  </p>
+				</div>
+				<div class="col-6 right-col">
+
+				</div>
+			</div>
+		</div>
+		<div class="content-section" id="brainstorming">
+			<h3 class="content-header">BRAINSTORMING</h3>
+			<div class="borderlinelight"></div>
+			<div class="percontent">
+				<div class="col-6 left-col">
+					<p>I came up with several digital solutions through quick sketching. Some of them were digital facilities distributed on main streets in city districts. Some were purely web or mobile based products which could also be used together with iBeacon set inside museum when people visit. One idea was even about 3D holographic projection. </p>
+				</div>
+				<div class="col-6 right-col">
+					<img class="inside_img mockupsimg" src="../img/betweenworlds/bw_ideas.png" alt="brainstormings" height="12rem">
+				</div>
+			</div>
+			<div class="percontent">
+				<div class="col-6 left-col">
+					<p>Chosen from these ideas, I made several prototypes and had my peers test them quickly for me. </p>
+				</div>
+				<div class="col-6 right-col">
+					<img class="inside_img mockupsimg" src="../img/betweenworlds/bw_lofi_a.png" alt="brainstormings" height="12rem">
+				</div>
+			</div>
+			<div class="percontent">
+				<p> To make my 1st-step prototype interactive, I quickly sketched 2 360 images and used one 360 photo found online with simple interactions, drew with Photoshop CS, built on A-Frame & glitch. </p>
+				<p>Free to play with this low-fi prototype (background music provided)! If you want to have a try on Cardboard, visit <a href="https://360exhibition.glitch.me/">here</a> </p>
+				<iframe src="https://360exhibition.glitch.me/"  class="insertweb" height="500px" width="100%"></iframe>
+			</div>
+			<div class="percontent">
+				<p>It came out that people were more interested in a VR-based experience considering the possibilities of being able to experience a "story" in that immersive context and could have more vivid experience. Besides, VR-technology could also support mobile-accessible requirement. </p>
+			</div>
+		</div>
+		<div class="content-section">
+			<div class="percontent">
+				<div class="col-6 left-col">
+					<img class="inside_img" src="../img/betweenworlds/bw_lowfi_01.gif" alt="brainstormings" height="12rem">
+				</div>
+				<div class="col-6 right-col">
+					<p>Immersive scene with easy-access menu.</p>
+				</div>
+			</div>
+			<div class="percontent">
+				<div class="col-6 left-col">
+					<img class="inside_img" src="../img/betweenworlds/bw_lowfi_02.gif" alt="brainstormings" height="12rem">
+				</div>
+				<div class="col-6 right-col">
+					<p>VR glass view</p>
+				</div>
+			</div>
+			<div class="percontent">
+				<div class="col-6 left-col">
+					<img class="inside_img" src="../img/betweenworlds/bw_lowfi_03.gif" alt="brainstormings" height="12rem">
+				</div>
+				<div class="col-6 right-col">
+					<p>Focusing on specific place will trigger "stories"</p>
+				</div>
+			</div>
+		</div>
+
+		<div class="content-section" id="userflows">
+			<h3 class="content-header">USER FLOWS</h3>
+			<div class="borderlinelight"></div>
+			<div class="percontent">
+				<p>To provide options for both technical and cultural-intended people, I designed 2 "visiting routes" for users. One includes a brief process of bridge building and allows users to explore how to build the bridge through viewing and side quests. The other includes local featured sites and products. </p>
+				<img class="inside_img mockupsimg" src="../img/betweenworlds/bw_userflow_0303update.png" alt="brainstormings" height="12rem">
+			</div>
+		</div>
+
+		<!-- <div class="content-section" id="interfaces">
+			<h3 class="content-header">INTERFACES</h3>
+			<div class="borderlinelight"></div>
+			<div class="percontent">
+				<p>For each scenes designed in user flows, firstly I came up with a quick interface design. </p>
+				<img class="inside_img mockupsimg" src="../img/betweenworlds/bw_conceptsketch.png" alt="conceptsketch" height="12rem">
+				<p class="imgnote">conceptual sketches of users' views in "Technical Route"</p>
+			</div>
+			<div class="percontent">
+				<p>To make initial demo, I picked the onboarding process and 5 scenes in both routes to design interfaces, including User Tasks, Environments, Transitions, User Action, Sound, etc.</p>
+			</div>
+			<div class="percontent">
+				<div class="col-6 left-col">
+					<img class="inside_img mockupsimg" src="../img/betweenworlds/bw_interface_georesearch.png" alt="conceptinterface" height="12rem">
+				</div>
+				<div class="col-6 right-col">
+					<img class="inside_img mockupsimg" src="../img/betweenworlds/bw_interface_mechanics.png" alt="conceptinterface" height="12rem">
+				</div>
+			</div>
+			<div class="percontent">
+				<div class="col-6 left-col">
+					<img class="inside_img mockupsimg" src="../img/betweenworlds/bw_interface_cablecar.png" alt="conceptinterface" height="12rem">
+				</div>
+				<div class="col-6 right-col">
+					<img class="inside_img mockupsimg" src="../img/betweenworlds/bw_interface_museumpark.png" alt="conceptinterface" height="12rem">
+				</div>
+			</div>
+			<div class="percontent">
+				<div class="col-6 left-col">
+					<img class="inside_img mockupsimg" src="../img/betweenworlds/bw_interface_gulangisland.png" alt="conceptinterface" height="12rem">
+				</div>
+				<div class="col-6 right-col">
+					<img class="inside_img mockupsimg" src="../img/betweenworlds/bw_interface_homepage.png" alt="conceptinterface" height="12rem">
+				</div>
+			</div>
+		</div> -->
+		<div class="content-section" id="storyboards">
+			<h3 class="content-header">STORYBOARDS</h3>
+			<div class="borderlinelight"></div>
+			<div class="percontent">
+				<div class="col-6 left-col">
+					<p>In creating storyboards for the process, I tried to decompose to each possible action step.</p>
+				</div>
+				<div class="col-6 right-col">
+					<img class="inside_img mockupsimg" src="../img/betweenworlds/bw_storyboard2.png" alt="brainstormings" height="12rem">
+				</div>
+			</div>
+			<div class="percontent">
+				<p>For each scenes designed in user flows, firstly I came up with a quick interface design. </p>
+				<img class="inside_img mockupsimg" src="../img/betweenworlds/bw_conceptsketch.png" alt="conceptsketch" height="12rem">
+				<p class="imgnote">conceptual sketches of users' views in "Technical Route"</p>
+			</div>
+			<div class="percontent">
+				<p>To make initial demo, I picked the onboarding process and 5 scenes in both routes to design interfaces, including User Tasks, Environments, Transitions, User Action, Sound, etc.</p>
+			</div>
+			<div class="percontent">
+				<div class="col-6 left-col">
+					<img class="inside_img mockupsimg" src="../img/betweenworlds/bw_interface_georesearch.png" alt="conceptinterface" height="12rem">
+				</div>
+				<div class="col-6 right-col">
+					<img class="inside_img mockupsimg" src="../img/betweenworlds/bw_interface_mechanics.png" alt="conceptinterface" height="12rem">
+				</div>
+			</div>
+			<div class="percontent">
+				<div class="col-6 left-col">
+					<img class="inside_img mockupsimg" src="../img/betweenworlds/bw_interface_cablecar.png" alt="conceptinterface" height="12rem">
+				</div>
+				<div class="col-6 right-col">
+					<img class="inside_img mockupsimg" src="../img/betweenworlds/bw_interface_museumpark.png" alt="conceptinterface" height="12rem">
+				</div>
+			</div>
+			<div class="percontent">
+				<div class="col-6 left-col">
+					<img class="inside_img mockupsimg" src="../img/betweenworlds/bw_interface_gulangisland.png" alt="conceptinterface" height="12rem">
+				</div>
+				<div class="col-6 right-col">
+					<img class="inside_img mockupsimg" src="../img/betweenworlds/bw_interface_homepage.png" alt="conceptinterface" height="12rem">
+				</div>
+			</div>
+		</div>
+
+		<div class="content-section" id="vrprototype">
+			<h3 class="content-header">LOW-FI PROTOTYPES</h3>
+			<div class="borderlinelight"></div>
+			<div class="percontent">
+				<div class="col-6 left-col">
+					<img class="inside_img" src="../img/betweenworlds/interfaceelements.png" alt="">
+				</div>
+				<div class="col-6 right-col">
+					<p>For interface elements, my initial design idea is to make them simple and more 2D style, to have the contrast with 3D "world".</p>
+				</div>
+			</div>
+			<div class="percontent">
+				<div class="col-6 left-col">
+					<p>For per "side quest", users may see different pop ups, and here is an example.</p>
+				</div>
+				<div class="col-6 right-col">
+					<img class="inside_img" src="../img/betweenworlds/bw_wireframe1.png" alt="">
+				</div>
+			</div>
+			<div class="percontent">
+				<p>Let's see something closer to what I may have in final products.</p>
+			</div>
+			<div class="percontent">
+				<div class="col-8 left-col">
+					<img class="inside_img" src="../img/betweenworlds/musicband_gulang.png" alt="">
+				</div>
+				<div class="col-4 right-col">
+					<p>Cutural Tour Site 1: Users could listen to local music pieces and view lyrics or sheets.</p>
+				</div>
+			</div>
+			<div class="percontent">
+				<div class="col-8 left-col">
+					<img class="inside_img" src="../img/betweenworlds/localfood_gulang.png" alt="">
+				</div>
+				<div class="col-4 right-col">
+					<p>Cutural Tour Site 2: User can "choose" "how to cook" to see how local people cook featured foods. As food and taste are special "memory" media for local people and catalyst for travelers to learn about the city, I decided to include it inside the "tour".</p>
+				</div>
+			</div>
+			<div class="percontent">
+				<div class="col-8 left-col">
+					<img class="inside_img" src="../img/betweenworlds/cable_bridge.png" alt="">
+				</div>
+				<div class="col-4 right-col">
+					<p>Bridge Construction Tour Site 1: On cable car, users could experience how it looks like when engineers examine the cables and perform checking process, users could also "try" to help complete the checking and operate the car.</p>
+				</div>
+			</div>
+		</div>
+
+
+			<!-- <div class="content-section" id="conceptualprototypes">
+				<h3 class="content-header">CONCEPTUAL PROTOTYPES</h3>
+				<div class="borderlinelight"></div>
+				<div class="percontent">
+					<div class="col-8 left-col">
+						<img class="inside_img" src="../img/betweenworlds/musicband_gulang.png" alt="">
+					</div>
+					<div class="col-4 right-col">
+						<p>Users could listen to local music pieces and view lyrics or sheets.</p>
+					</div>
+				</div>
+				<div class="percontent">
+					<div class="col-8 left-col">
+						<img class="inside_img" src="../img/betweenworlds/localfood_gulang.png" alt="">
+					</div>
+					<div class="col-4 right-col">
+						<p>User can "choose" "how to cook" to see how local people cook featured foods. As food and taste are special "memory" media for local people and catalyst for travelers to learn about the city, I decided to include it inside the "tour".</p>
+					</div>
+				</div>
+			</div> -->
+
+			<div class="reserved-space">
+			</div>
+		<div class="endofproject">
+			<p>👈 More Updates May Come In the Future! Thanks for scrolling 👉</p>
+		</div>
+	</div>
+	<footer>
+	  <div class="footerzone">
+		<div class="row">
+		  <div class="col-6 footernotes">
+			<!-- <p><span class="highlight">"To see the world, things dangerous to come to, to see behind walls, to draw closer, to find each other and to feel, that is the purpose of life."</span> - <i>The Screte Life of Walter Mitty</i></p> -->
+		  </div>
+		  <div class="col-6 footeridentity">
+			  <img src="../img/icon_handwrite_black.png" alt="logo" class="footerlogo">
+			  <small class="footerref">© 2019. Designed and coded by Xi Li</small>
+			  <div align="center" class="socialbtns">
+				  <ul class="socialbtnslist">
+					  <li><a href="mailto:lcxi.clcc@gmail.com" class="fa fa-paper-plane"></a></li>
+					  <li><a href="https://www.linkedin.com/in/xiccli" class="fa fa-linkedin"></a></li>
+					  <li><a href="https://www.behance.net/xicc" class="fa fa-behance"></a></li>
+					  <li><a href="https://twitter.com/ccxi16" class="fa fa-twitter"></a></li>
+					  <li><a href="https://github.com/xiccli" class="fa fa-github"></a></li>
+				  </ul>
+			  </div>
+		  </div>
+	  </div>
+	</footer>
+	</div>
+	</div>
+	<script>
+	//modal image
+	$(document).ready(function () {
+	  $(".inside_img").click(function(){
+	    var t = $(this).attr("src");
+	    $(".modal-body").html("<img src='"+t+"' class='modal-img'>");
+	    $("#myModal").modal();
+	  });
+	});
+
+	//fadeIn
+	var $contentdiv =  $(".content-section");
+
+	$(window).scroll(function () {
+	    $contentdiv.each(function () {
+	        contentMiddle = $(this).offset().top + (0.1 *$(this).height());
+	        windowBottom = $(window).scrollTop() + $(window).height();
+	        if (contentMiddle < windowBottom) {
+	          $(this).addClass("contentFadeIn");
+	        }
+	    });
+	});
+
+
+	//navbar events
+	   var c, currentScrollTop = 0,
+	       navbar = $('nav');
+
+	   $(window).scroll(function () {
+	      var a = $(window).scrollTop();
+	      var b = navbar.height();
+
+	      currentScrollTop = a;
+
+	      if (c < currentScrollTop && a > b + b) {
+	        navbar.addClass("scrollUp");
+	      } else if (c > currentScrollTop && !(a <= b)) {
+	        navbar.removeClass("scrollUp");
+	      }
+	      c = currentScrollTop;
+	  });
+
+
+	$('#toggle').click(function() {
+	   $(this).toggleClass('active');
+	   $('#overlay').toggleClass('open');
+	  });
+	  $(".scrollTo").on('click', function(e) {
+		 e.preventDefault();
+		 var target = $(this).attr('href');
+		 $('html, body').animate({
+		   scrollTop: ($(target).offset().top)
+	   }, 500);
+	  });
+
+
+
+	window.onscroll = function() {scrollFunction(x)};
+
+	function scrollFunction() {
+	  if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
+	    document.getElementById("myBtn").style.display = "block";
+		if (x.matches) { // If media query matches
+		    document.getElementById("sidenav").style.display = "none";
+		  }else {
+	  	    document.getElementById("sidenav").style.display = "block";
+
+	  	  }
+	  } else {
+	    document.getElementById("myBtn").style.display = "none";
+			navbar.removeClass("scrollUp");
+		document.getElementById("sidenav").style.display = "none";
+	  }
+	}
+
+	// When the user clicks on the button, scroll to the top of the document
+	function topFunction() {
+	  document.body.scrollTop = 0;
+	  document.documentElement.scrollTop = 0;
+	}
+
+	var x = window.matchMedia("(max-width: 1025px)")
+	// myFunction(x) // Call listener function at run time
+	// x.addListener(myFunction)
+
+	//PROGRESS BAR STARTS
+	const body = document.body;
+	const documentElement = document.documentElement;
+	const progressBarEl = document.getElementById('progressBar');
+
+	const scrollTop = () => Math.max(body.scrollTop, documentElement.scrollTop);
+	const handleOnScroll = () => {
+	  const scrollAmount = scrollTop() / (documentElement.scrollHeight - documentElement.clientHeight);
+	  const scrollPercentage = Math.round(scrollAmount * 100);
+
+	  progressBarEl.style.width = `${scrollPercentage}%`
+	};
+
+	window.addEventListener('scroll', handleOnScroll);
+	//PROGRESS BAR ENDS
+
+	</script>
+	</body>
+	</html>

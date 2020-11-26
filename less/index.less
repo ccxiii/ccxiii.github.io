@@ -1,0 +1,52 @@
+@import "vars.less";
+
+.jumbospectrum{
+	.jumbotron{
+		background-color:transparent;
+	}
+
+}
+
+.container_2{
+	#specjumbo_topline{
+		margin-bottom:4rem;
+		margin-top:5rem;
+		color:@dark-grey;
+	}
+}
+
+.spectrum_container{
+	display:flex;
+	flex-direction:row;
+	flex-wrap:wrap;
+	img{
+		opacity:1;
+		width:50%;
+		margin-bottom:2rem;
+	}
+	.col-3{
+		text-align:left;
+	}
+	.perspectrum{
+		padding-right:10px;
+		h5{
+			color:@dark-grey;
+			// margin-bottom:1rem;
+		}
+		p{
+			font-size:0.9rem;
+			color:@mid-grey;
+		}
+		.belowlinetext{
+			margin-right:10px;
+		}
+	}
+}
+
+@media screen and (max-width:1024px){
+	.gallerycontent{
+		.tile{
+			width:90%;
+		}
+	}
+}

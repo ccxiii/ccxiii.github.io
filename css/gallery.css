@@ -1,0 +1,135 @@
+@scroll-down-animation- 1 {
+  opacity: 1;
+  -webkit-transition: all 0.5s ease-in 3s;
+  transition: all 0.5s ease-in 3s;
+}
+@keyframes bounce {
+  0%,
+  100%,
+  20%,
+  50%,
+  80% {
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+  }
+  40% {
+    -webkit-transform: translateY(-10px);
+    -ms-transform: translateY(-10px);
+    transform: translateY(-10px);
+  }
+  60% {
+    -webkit-transform: translateY(-5px);
+    -ms-transform: translateY(-5px);
+    transform: translateY(-5px);
+  }
+}
+body {
+  background-color: #161616;
+}
+footer {
+  color: #f2f2f0;
+}
+.navbar,
+.overlay-menu {
+  background-color: #161616;
+}
+.navbar a,
+.overlay-menu a {
+  text-decoration: none;
+  margin: 0 10px;
+  color: #f2f2f0, 255, 255;
+  padding: 0 10px 4px 10px;
+  transition: 0.4s ease;
+  border-bottom: 2px solid #161616;
+}
+.navbar a:hover,
+.overlay-menu a:hover {
+  color: #12AEEE;
+  padding: 0 10px 6px 10px;
+  border-bottom: 2px solid #12AEEE;
+}
+#onpage-gallery {
+  text-decoration: none;
+  margin: 0 10px;
+  color: #12AEEE;
+  padding: 0 10px 6px 10px;
+  border-bottom: 2px solid #12AEEE;
+}
+.jumbotron {
+  padding-left: 10%;
+  padding-right: 10%;
+  max-width: 100%;
+}
+.jumbotron h1,
+.jumbotron p {
+  color: #12AEEE;
+}
+.jumbotron .wrapper a {
+  color: #12AEEE;
+}
+.jumbotron .wrapper a:hover {
+  color: #f2f2f0;
+}
+#gallery-title {
+  color: #12AEEE;
+  font-family: 'Lato', sans-serif;
+  font-size: 3rem;
+  margin-top: 8rem;
+}
+.gallery-welcome {
+  color: #12AEEE;
+  font-family: 'Lato', sans-serif;
+}
+.types {
+  font-family: 'Lato', sans-serif;
+  margin-bottom: 3rem;
+  display: flex;
+  justify-content: center;
+}
+.types a {
+  text-decoration: none;
+  margin: 0 10px;
+  color: #f2f2f0;
+  padding: 0 10px 4px 10px;
+  transition: 0.4s ease;
+  border-bottom: 2px solid #f2f2f0;
+}
+.types a:hover {
+  color: #12AEEE;
+  padding: 0 10px 6px 10px;
+  border-bottom: 2px solid #12AEEE;
+}
+.mainprojects {
+  margin-top: 5rem;
+}
+#gujian3 {
+  color: #161616;
+  background-image: url("../img/gallery/color_lgsize2.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.wrapper {
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+}
+.wrapper h1 {
+  font-family: 'Lato', sans-serif;
+}
+.perproject {
+  height: 800px;
+}
+@media screen and (max-width: 650px) {
+  header #bodycontainer .navbar {
+    display: none;
+  }
+  .jumbotron .scroll-down-part {
+    display: none;
+  }
+}
+@media screen and (min-width: 650px) {
+  header #bodycontainer .smallnav {
+    display: none;
+  }
+}
