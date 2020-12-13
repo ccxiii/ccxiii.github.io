@@ -50,19 +50,11 @@
 .jumbotron h1 {
   color: #3e515b;
   margin-top: 18vh;
-  -webkit-animation: slideIn 1.5s ease forwards;
-  animation: slideIn 1.5s ease forwards;
-}
-.jumbotron img {
-  -webkit-animation: slideIn 1.5s ease forwards;
-  animation: slideIn 1.5s ease forwards;
 }
 .jumbotron p {
   margin-top: 2rem;
   color: #92a9b4;
   font-size: 1.1rem;
-  -webkit-animation: slideIn 2.5s ease forwards;
-  animation: slideIn 2.5s ease forwards;
 }
 .jumbotron a {
   font-weight: 300;
@@ -78,9 +70,33 @@
   padding-right: 15%;
 }
 .resume .col_title {
-  font-size: 1.2rem;
+  font-size: 1rem;
   color: #414141;
   font-weight: bolder;
+}
+.resume .res_persection {
+  display: flex;
+  flex-direction: row;
+}
+.resume .res_persection .col_content_l {
+  font-size: 1.2rem;
+  color: #808080;
+  font-weight: normal;
+  margin-bottom: 0.4rem;
+}
+.resume .res_persection .col_content_m {
+  font-size: 1.2rem;
+  color: #808080;
+  font-weight: 300;
+}
+.resume .res_persection .col_content_s {
+  font-size: 0.8rem;
+  color: #b5b5b5;
+  font-weight: 100;
+  margin-bottom: 0.6rem;
+}
+.resume .res_persection .content_group {
+  margin-bottom: 4rem;
 }
 #musicnote {
   margin-top: 2rem;
