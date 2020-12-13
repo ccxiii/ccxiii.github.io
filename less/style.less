@@ -52,20 +52,20 @@ a{
 	opacity:0.9;
 	padding-left:9%;
 	padding-right:9%;
-	padding-top:1.2rem;
-	padding-bottom:1.2rem;
+	padding-top:2.4rem;
+	// padding-bottom:1.2rem;
 	font-size:1.2rem;
 	z-index:99;
 	position:fixed;
 	width:100%;
 	.navlinkself{
 		margin-left:1rem;
-		font-weight:500;
+		font-weight:lighter;
 		font-size:1rem;
-		color:@lightqing;
+		color:@mid-grey;
 		&:hover{
-			font-weight:500;
-			color:@neoblue;
+			font-weight:lighter;
+			color:@darkerqing;
 			transition: all .2s ease;
 		}
 		font-family:@navtypeface;
@@ -75,7 +75,7 @@ a{
 }
 
 .scrollUp {
-  transform: translateY(-80px);
+  transform: translateY(-90px);
 
 }
 
@@ -85,9 +85,12 @@ a{
 	height:2.7rem;
 	text-decoration: none;
 	margin:0;
+	font-size: 2rem;
+	font-weight: 300;
 	padding: 0;
 	transition:none;
 	box-shadow:none;
+	color:#000000;
 	&:hover{
 			// color:@dark-blue;
 			padding:0;
@@ -144,7 +147,7 @@ a:hover:after {
 // --------------------------------------- JUMBOTRON ---------------------------------------
 .jumbotron{
 	background-color:@white;
-	height:90vh;
+	height:80vh;
 	padding-left:12%;
 	padding-right:12%;
 	p{
@@ -181,11 +184,11 @@ a:hover:after {
 		}
 	}
 	#jumbo_topline{
-		font-size:4.5rem;
-		margin-top:32vh;
-		color:@neoblue;
-	    -webkit-animation: slideIn 1.5s ease forwards;
-	    animation: slideIn 1.5s ease forwards;
+		font-size:3rem;
+		margin-top:24vh;
+		color:@black;
+	    -webkit-animation: slideIn 1s ease forwards;
+	    animation: slideIn 1s ease forwards;
 	}
 	#jumbo_secline{
 		margin-bottom:3rem;
@@ -194,11 +197,11 @@ a:hover:after {
 		margin-top:0;
 	}
 	#jumbotext{
-		font-size:1.5rem;
+		font-size:1.125rem;
 		margin-top:1rem;
-		color:@lightqing;
-		-webkit-animation: slideIn 2.5s ease forwards;
-		animation: slideIn 2.5s ease forwards;
+		color:@dark-grey;
+		-webkit-animation: slideIn 1.4s ease forwards;
+		animation: slideIn 1.4s ease forwards;
 		font-weight:100;
 	}
 	.linktoworks{
@@ -222,6 +225,15 @@ a:hover:after {
 	}
 }
 
+#introjumbo{
+	// background-image:url("../img/index/jumbotron_background2.png");
+	background-size:contain;
+	background-repeat: no-repeat;
+	background-position: center;
+	h1,p{
+		color:@fontblue;
+	}
+}
 
 // --------------------------------------- PROJECTS NAVBAR ---------------------------------------
 
@@ -307,15 +319,7 @@ a:hover:after {
     animation: slideIn 0.8s ease 0.3s forwards;
 }
 
-#introjumbo{
-	background-image:url("../img/index/jumbotron_background2.png");
-	background-size:contain;
-	background-repeat: no-repeat;
-	background-position: center;
-	h1,p{
-		color:@fontblue;
-	}
-}
+
 
 // --------------------------------------- PROJECTS GALLERY INDEX ---------------------------------------
 
@@ -457,23 +461,27 @@ a:hover:after {
 	padding-right:6.6%;
 	margin-left:0;
 	margin-right:0;
-	background-image:url("../img/footernew.png");
+	// background-image:url("../img/footernew.png");
 	background-size:cover;
 	background-repeat: no-repeat;
 	background-position: center;
 	// background-color:rgba(0,0,0,0.05);
-	margin-top:2rem;
-	height:10rem;
-	padding-top:5rem;
-	height:100%;
+	margin-top:4rem;
+	// height:5rem;
+	// padding-top:5rem;
+	height:50%;
 	p{
 		font-size:1rem;
+		text-align:center;
 	}
+	display:flex;
+	justify-content: center;
 }
 .footeridentity{
 	display:flex;
-	justify-content: center;
-	flex-direction: column;
+	justify-content: space-between;
+	flex-direction: row;
+
 	p{
 		margin-top:0;
 	}
@@ -484,15 +492,25 @@ a:hover:after {
 	width:4rem;
 }
 .footerref{
-	padding-top:0.7rem;
+	padding-top:1rem;
 }
 
 .footernotes{
-	margin-top:1rem;
-	padding-top:1rem;
-	color:@light-grey;
+	margin-top:0.5rem;
+	padding-top:0.5rem;
 	span{
-		font-weight:500;
+		color:@mid-grey;
+		font-weight:100;
+		font-size:1rem;
+		font-style:italic;
+	}
+	.highlightcontact{
+		color:@black;
+		margin:auto;
+		font-weight:normal;
+		font-size:1rem;
+		font-style: normal;
+		text-align:center;
 	}
 }
 

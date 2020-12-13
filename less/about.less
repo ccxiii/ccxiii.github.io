@@ -7,12 +7,22 @@
 // 	background-position: center;
 // }
 .jumbotron{
-
-		background-image:url("../img/about/about_top4.png");
-		background-size:contain;
-		background-repeat: no-repeat;
-		background-position: center;
-		background-color:@white;
+		flex-direction: column;
+		justify-content: center;
+		padding-top:10rem;
+		height:65vh;
+	.about_avatar{
+		text-align: center;
+		img{
+			height:15rem;
+			width:15rem;
+		}
+		p{
+			typeface:@fontbody;
+			font-size:1.2rem;
+			color:@mid-grey;
+		}
+	}
 	.container{
 		text-align: left;
 		max-width:64%;
@@ -22,6 +32,10 @@
 		h1{
 			color:@darkqing;
 			margin-top:18vh;
+			-webkit-animation: slideIn 1.5s ease forwards;
+		   animation: slideIn 1.5s ease forwards;
+		}
+		img{
 			-webkit-animation: slideIn 1.5s ease forwards;
 		   animation: slideIn 1.5s ease forwards;
 		}
@@ -49,6 +63,17 @@
 			margin:0;
 		}
 
+}
+
+.resume{
+	padding-top:2rem;
+	padding-left:15%;
+	padding-right:15%;
+	.col_title{
+		font-size:1.2rem;
+		color: @dark-grey;
+		font-weight:bolder;
+	}
 }
 
 #musicnote{

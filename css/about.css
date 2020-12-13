@@ -25,11 +25,22 @@
   }
 }
 .jumbotron {
-  background-image: url("../img/about/about_top4.png");
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-color: #ffffff;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 10rem;
+  height: 65vh;
+}
+.jumbotron .about_avatar {
+  text-align: center;
+}
+.jumbotron .about_avatar img {
+  height: 15rem;
+  width: 15rem;
+}
+.jumbotron .about_avatar p {
+  typeface: 'Lato', sans-serif;
+  font-size: 1.2rem;
+  color: #808080;
 }
 .jumbotron .container {
   text-align: left;
@@ -39,6 +50,10 @@
 .jumbotron h1 {
   color: #3e515b;
   margin-top: 18vh;
+  -webkit-animation: slideIn 1.5s ease forwards;
+  animation: slideIn 1.5s ease forwards;
+}
+.jumbotron img {
   -webkit-animation: slideIn 1.5s ease forwards;
   animation: slideIn 1.5s ease forwards;
 }
@@ -56,6 +71,16 @@
   color: #78D4D0;
   padding: 0;
   margin: 0;
+}
+.resume {
+  padding-top: 2rem;
+  padding-left: 15%;
+  padding-right: 15%;
+}
+.resume .col_title {
+  font-size: 1.2rem;
+  color: #414141;
+  font-weight: bolder;
 }
 #musicnote {
   margin-top: 2rem;

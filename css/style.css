@@ -55,8 +55,7 @@ a {
   opacity: 0.9;
   padding-left: 9%;
   padding-right: 9%;
-  padding-top: 1.2rem;
-  padding-bottom: 1.2rem;
+  padding-top: 2.4rem;
   font-size: 1.2rem;
   z-index: 99;
   position: fixed;
@@ -65,24 +64,27 @@ a {
 }
 #navbarid .navlinkself {
   margin-left: 1rem;
-  font-weight: 500;
+  font-weight: lighter;
   font-size: 1rem;
-  color: #92a9b4;
+  color: #808080;
   font-family: 'Lato', sans-serif;
 }
 #navbarid .navlinkself:hover {
-  font-weight: 500;
-  color: #3993e5;
+  font-weight: lighter;
+  color: #1a2226;
   transition: all 0.2s ease;
 }
 .scrollUp {
-  transform: translateY(-80px);
+  transform: translateY(-90px);
 }
 #logoa {
   height: 2.7rem;
   text-decoration: none;
+  font-size: 2rem;
+  font-weight: 300;
   transition: none;
   box-shadow: none;
+  color: #000000;
   padding: 0;
   margin: 0;
 }
@@ -128,7 +130,7 @@ a {
 }
 .jumbotron {
   background-color: #ffffff;
-  height: 90vh;
+  height: 80vh;
   padding-left: 12%;
   padding-right: 12%;
 }
@@ -162,11 +164,11 @@ a {
   transition: all 0.35s ease;
 }
 .jumbotron #jumbo_topline {
-  font-size: 4.5rem;
-  margin-top: 32vh;
-  color: #3993e5;
-  -webkit-animation: slideIn 1.5s ease forwards;
-  animation: slideIn 1.5s ease forwards;
+  font-size: 3rem;
+  margin-top: 24vh;
+  color: #000000;
+  -webkit-animation: slideIn 1s ease forwards;
+  animation: slideIn 1s ease forwards;
 }
 .jumbotron #jumbo_secline {
   margin-bottom: 3rem;
@@ -175,11 +177,11 @@ a {
   margin-top: 0;
 }
 .jumbotron #jumbotext {
-  font-size: 1.5rem;
+  font-size: 1.125rem;
   margin-top: 1rem;
-  color: #92a9b4;
-  -webkit-animation: slideIn 2.5s ease forwards;
-  animation: slideIn 2.5s ease forwards;
+  color: #414141;
+  -webkit-animation: slideIn 1.4s ease forwards;
+  animation: slideIn 1.4s ease forwards;
   font-weight: 100;
 }
 .jumbotron .linktoworks {
@@ -199,6 +201,15 @@ a {
 }
 .jumbotron img {
   opacity: 0.6;
+}
+#introjumbo {
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+#introjumbo h1,
+#introjumbo p {
+  color: #23578e;
 }
 .typenav {
   width: 100%;
@@ -274,16 +285,6 @@ a {
 .tileFadeIn {
   -webkit-animation: slideIn 0.8s ease 0.3s forwards;
   animation: slideIn 0.8s ease 0.3s forwards;
-}
-#introjumbo {
-  background-image: url("../img/index/jumbotron_background2.png");
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-#introjumbo h1,
-#introjumbo p {
-  color: #23578e;
 }
 #limeproj {
   background-image: url("../img/lime/lime_index.png");
@@ -403,22 +404,22 @@ a {
   padding-right: 6.6%;
   margin-left: 0;
   margin-right: 0;
-  background-image: url("../img/footernew.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  margin-top: 2rem;
-  height: 10rem;
-  padding-top: 5rem;
-  height: 100%;
+  margin-top: 4rem;
+  height: 50%;
+  display: flex;
+  justify-content: center;
 }
 .footerzone p {
   font-size: 1rem;
+  text-align: center;
 }
 .footeridentity {
   display: flex;
-  justify-content: center;
-  flex-direction: column;
+  justify-content: space-between;
+  flex-direction: row;
   text-align: -webkit-right;
 }
 .footeridentity p {
@@ -429,15 +430,25 @@ a {
   width: 4rem;
 }
 .footerref {
-  padding-top: 0.7rem;
+  padding-top: 1rem;
 }
 .footernotes {
-  margin-top: 1rem;
-  padding-top: 1rem;
-  color: #b5b5b5;
+  margin-top: 0.5rem;
+  padding-top: 0.5rem;
 }
 .footernotes span {
-  font-weight: 500;
+  color: #808080;
+  font-weight: 100;
+  font-size: 1rem;
+  font-style: italic;
+}
+.footernotes .highlightcontact {
+  color: #000000;
+  margin: auto;
+  font-weight: normal;
+  font-size: 1rem;
+  font-style: normal;
+  text-align: center;
 }
 .socialbtnslist {
   text-align: right;
