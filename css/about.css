@@ -74,6 +74,13 @@
   color: #414141;
   font-weight: bolder;
 }
+.resume .divider {
+  padding-left: 15%;
+  padding-right: 15%;
+  height: 0.5px;
+  background: #bcbcbc;
+  margin-bottom: 4rem;
+}
 .resume .res_persection {
   display: flex;
   flex-direction: row;
