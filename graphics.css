@@ -1,0 +1,136 @@
+@scroll-down-animation- 1 {
+  opacity: 1;
+  -webkit-transition: all 0.5s ease-in 3s;
+  transition: all 0.5s ease-in 3s;
+}
+@keyframes bounce {
+  0%,
+  100%,
+  20%,
+  50%,
+  80% {
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+  }
+  40% {
+    -webkit-transform: translateY(-10px);
+    -ms-transform: translateY(-10px);
+    transform: translateY(-10px);
+  }
+  60% {
+    -webkit-transform: translateY(-5px);
+    -ms-transform: translateY(-5px);
+    transform: translateY(-5px);
+  }
+}
+body {
+  background-color: #ffffff;
+  background-image: none;
+}
+footer {
+  color: #808080;
+}
+.main {
+  margin-top: 8rem;
+}
+.jumbotron .wrapper h1,
+.jumbotron .wrapper p {
+  color: #414141;
+}
+.footerzone {
+  background-color: #ffffff;
+  color: #b5b5b5;
+}
+.footerzone .socialbtns .fa {
+  color: #b5b5b5;
+}
+.footerzone .socialbtns .fa:hover {
+  color: #78D4D0;
+}
+.navbarself {
+  background-color: #ffffff;
+  color: #808080;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  font-size: 1.2rem;
+}
+#progressBar {
+  background: #8BA2FF;
+}
+#logoa {
+  height: 2.7rem;
+  text-decoration: none;
+  transition: none;
+  box-shadow: none;
+  padding: 0;
+  margin: 0;
+}
+#logoa:hover {
+  padding: 0;
+  border-bottom: none;
+}
+#logoa img {
+  height: 100%;
+}
+#navbarNavAltMarkup {
+  justify-content: flex-end;
+}
+.gallery_title {
+  max-width: 600px;
+  margin: auto;
+  font-size: 0.6rem;
+  color: #808080;
+  font-weight: bolder;
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+.gallery {
+  -webkit-column-count: 2;
+  -moz-column-count: 2;
+  column-count: 2;
+  -webkit-column-gap: 10px;
+  -moz-column-gap: 10px;
+  column-gap: 10px;
+  margin-top: 10px;
+  overflow: hidden;
+}
+.gallery img {
+  opacity: 0.9;
+  filter: grayscale(0%);
+  /* FF 35+ */
+}
+.gallery img:hover {
+  box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.3), 0 8px 22px 0 rgba(0, 0, 0, 0.21);
+}
+.gallery-img {
+  cursor: zoom-in;
+}
+.modal-img,
+.model-vid {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  display: table;
+}
+.modal-body {
+  padding: 0px;
+}
+.modal-dialog {
+  border-radius: 0;
+  padding-top: 12vh;
+  max-width: 80%;
+  height: auto;
+  position: relative;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.modal-content {
+  border: none;
+}
