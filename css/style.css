@@ -46,6 +46,7 @@ footer {
   font-family: 'Lato', sans-serif;
   color: #b5b5b5;
   position: relative;
+  margin-bottom: 4rem;
 }
 a {
   text-decoration: none;
@@ -241,13 +242,13 @@ a {
   font-weight: bolder;
 }
 .typenav .typenavul li:hover {
-  color: #45d8d0;
+  color: #548ed3;
   -webkit-transition: all 0.2s ease-in;
   transition: all 0.2s ease-in;
   cursor: pointer;
 }
 .typenav .typenavul li #onsection {
-  color: #45d8d0;
+  color: #548ed3;
 }
 .projectsgallery {
   margin-left: 5%;
@@ -421,6 +422,7 @@ a {
   justify-content: space-between;
   flex-direction: row;
   text-align: -webkit-right;
+  margin-bottom: 4rem;
 }
 .footeridentity p {
   margin-top: 0;
@@ -470,7 +472,7 @@ a {
   padding-left: 15px;
 }
 .socialbtns .fa:hover {
-  color: #45d8d0;
+  color: #548ed3;
   transition: all 0.2s ease;
   text-decoration: none;
 }
@@ -551,7 +553,7 @@ a {
   top: 0;
   width: 0%;
   height: 4px;
-  background: #45d8d0;
+  background: #548ed3;
   transition: width 0.2s ease;
   z-index: 100;
 }
@@ -774,8 +776,8 @@ a {
 }
 .btn:hover {
   text-decoration: none;
-  border: 1px solid #45d8d0;
-  color: #45d8d0;
+  border: 1px solid #548ed3;
+  color: #548ed3;
 }
 .btn:focus {
   outline: none;
